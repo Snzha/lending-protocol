@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+
+# build output
+frontend/.next/
+frontend/out/
+contracts/build/
+
+# env files
+.env*
+!.env.example
+
+# system
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+
+# misc
+*.pem
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+.netlify
+.claude/

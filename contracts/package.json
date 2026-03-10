@@ -1,0 +1,17 @@
+{
+    "name": "lending-pool-contract",
+    "version": "1.0.0",
+    "description": "LendingPool contract for Bitcoin L1 via OPNet",
+    "scripts": {
+        "build": "asc src/index.ts --target release --measure --uncheckedBehavior never"
+    },
+    "dependencies": {
+        "@btc-vision/as-bignum": "^0.1.0",
+        "@btc-vision/btc-runtime": "1.11.0-rc.10"
+    },
+    "devDependencies": {
+        "@btc-vision/opnet-transform": "^1.2.0",
+        "assemblyscript": "^0.28.9",
+        "typescript": "^5.9.3"
+    }
+}

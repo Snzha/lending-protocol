@@ -1,0 +1,17 @@
+{
+    "name": "bitcoin-lending-protocol",
+    "version": "1.0.0",
+    "description": "Aave-like lending protocol on Bitcoin L1 via OP_NET",
+    "private": true,
+    "scripts": {
+        "postinstall": "cd contracts && npm install && cd ../frontend && npm install",
+        "dev": "cd frontend && npm run dev",
+        "build": "cd frontend && npm run build",
+        "build:contracts": "cd contracts && npm run build",
+        "deploy": "npx ts-node scripts/deploy.ts"
+    },
+    "devDependencies": {
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    }
+}

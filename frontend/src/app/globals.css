@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #f97316;
+    --color-primary-light: #fb923c;
+    --color-accent: #ea580c;
+    --color-success: #22c55e;
+    --color-danger: #ef4444;
+    --color-warning: #eab308;
+    --color-brown-950: #1c0f05;
+    --color-brown-900: #2a1a0e;
+    --color-brown-800: #3d2517;
+    --color-brown-700: #553620;
+    --color-brown-600: #6d4729;
+    --color-brown-500: #8b5e3c;
+    --color-brown-400: #a47551;
+    --color-brown-300: #c49a76;
+    --color-brown-200: #dbb99a;
+    --color-brown-100: #eedcc8;
+    --color-card-bg: rgba(255, 255, 255, 0.04);
+    --color-card-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+    background: #120a04;
+    color: #fafaf9;
+}
+
+.glass {
+    background: rgba(42, 26, 14, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+}
+
+.glass-hover:hover {
+    background: rgba(61, 37, 23, 0.7);
+    border-color: rgba(249, 115, 22, 0.2);
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px);
+}
+
+/* Aave-style table */
+.market-table th {
+    color: #a47551;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.market-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.market-table tbody tr {
+    transition: background 0.15s;
+}
+
+.market-table tbody tr:hover {
+    background: rgba(249, 115, 22, 0.04);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3d2517;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #553620;
+}
+
+/* Hide Next.js dev indicators */
+nextjs-portal,
+[data-nextjs-toast],
+[data-nextjs-dialog-overlay],
+#__next-build-indicator {
+    display: none !important;
+}
+
+/* Orange glow effect */
+.orange-glow {
+    box-shadow: 0 0 40px rgba(249, 115, 22, 0.15);
+}
+
+/* Gradient text helper */
+.text-gradient-orange {
+    background: linear-gradient(135deg, #f97316, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
